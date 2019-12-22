@@ -1,0 +1,345 @@
+.Formulario_Registro{
+	width: 600px;
+	background-color: #e3e3e3;
+	height: 620px;
+	border-radius: 5px;
+}
+
+form{
+  font-family: verdana;
+}
+
+input[type="text"], input[type="password"]{
+  width: 80%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+input[type="email"]{
+  width: 80%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+input[type="text"]:focus {
+  border-color: #70b22d;
+  box-shadow: 0 0 8px 0 #70b22d;
+}
+input[type="text"]:hover {
+  border-color: #70b22d;
+  box-shadow: 0 0 8px 0 #70b22d;
+}
+input[type="password"]:focus {
+  border-color: #70b22d;
+  box-shadow: 0 0 8px 0 #70b22d;
+}
+
+input[type="password"]:hover {
+  border-color: #70b22d;
+  box-shadow: 0 0 5px 0 #70b22d;
+}
+
+
+.inputWithIcon input[type="text"]{
+  padding-left: 40px;
+}
+.inputWithIcon input[type="password"]{
+  padding-left: 40px;
+}
+.inputWithIcon input[type="email"]{
+  padding-left: 40px;
+}
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 11%;
+  top: 12px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.inputWithIcon input[type="text"]:focus + i {
+  color: #70b22d;
+}
+.inputWithIcon input[type="text"]:hover + i {
+  color: #70b22d;
+}
+.inputWithIcon input[type="password"]:focus + i {
+  color: #70b22d;
+}
+.inputWithIcon input[type="password"]:hover + i {
+  color: #70b22d;
+}
+.inputWithIcon.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+.inputWithIcon.inputIconBg input[type="password"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+
+#caja1{
+	float: left;
+	width: 45%;
+	margin-left: 5%;
+  margin-top: 5px;
+ 
+  padding-left: 8px
+  
+}
+
+
+#caja2{
+	float: right;
+  width: 43%;
+  margin-right: 5%;
+}
+
+
+.select-css {
+
+  display: block;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.5;
+  padding: .4em 1.4em .3em .8em;
+  padding-left: 35px;
+  width: 80%;
+  max-width: 100%; 
+  box-sizing: border-box;
+  margin: 0;
+  border: 2px solid #aaa;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+  border-radius: .3em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url('f.png'),
+    linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+  margin-left: 0px;
+}
+.select-css::-ms-expand {
+  display: none;
+}
+.select-css:hover{
+  border-color: #70b22d;
+  box-shadow: 0 0 8px 0 #70b22d;
+}
+.select-css:focus{
+  border-color: #70b22d;
+  box-shadow: 0 0 8px 0 #70b22d;
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color:black ;
+  outline: none;
+}
+
+.select-css option {
+  font-weight:normal;
+}
+
+#icon_select{
+  position: absolute;
+  left: 15%;
+  top: 2px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+}
+#icon_select:focus {
+  color: #70b22d;
+}
+#icon_select:hover{
+  color: #70b22d;
+}
+
+
+
+
+.input__row{
+  margin-top: 10px;  
+}
+
+/* Upload button */
+.input_file {
+  display: none;
+}
+.input_file {
+  border: 3px solid #bdbdbd;
+  position: relative;
+  width: 38%;
+  height: 30px;
+  display: flex;
+  border-radius: 3px;
+  background-color: white;
+  margin-right: 15%;
+  
+}
+.input_file .input-value{
+  width: 100%;
+  padding: 5px;
+  padding-left: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.input_file label {
+  cursor: pointer;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+  opacity: 10;
+  background:white url('../iconos/upload.png')no-repeat center ;
+  opacity: 3px;
+}
+.input_file label:hover {
+  background-color: #70b22d;
+}
+.input_file:hover{
+  border-color: #70b22d;
+  box-shadow: 0 0 8px 0 #70b22d;
+}
+/* Submit button */
+.submitbtn {
+  text-transform: uppercase;
+  background-color: #1f659b;
+  border-radius: 0;
+  font-weight: bold;
+  width: 80px;
+  border: none;
+  height: 30px;
+  color: #fff;
+}
+.submitbtn:hover {
+  color: #c3e3fc;
+}
+.submitbtn:hover + span.form-arrow::before {
+  border: 2px solid #c3e3fc;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.form-arrow{
+  position: relative;
+}
+.form-arrow::before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  display: block;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 20%;
+  right: 10px;
+}
+.btn_enviar{
+  align-items: center;
+  
+  margin-top: -150px;
+  height: 30px;
+  width: 450px;
+}
+
+#btn_enviar:hover{
+    
+    background-color: red;
+  }
+#polt_user{
+  top: -9px;
+  font-size: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#text_input{
+  width: 210px;
+
+}
+.input-file{
+  top: -35%;
+}
+#caja_opciones{
+  height: 10%;
+}
+
+.input_mail{
+  padding-left: 25px;
+  height: 20px;
+}
+#icono_mail{
+  position: absolute;
+  margin-left: 5px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
